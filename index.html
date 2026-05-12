@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Philip Wojcicki</title>
+  <meta name="description" content="Philip Wojcicki — PhD student at Imperial College London, working on reconfigurable accelerators (FPGAs), AI acceleration, and compilers." />
+  <meta name="author" content="Philip Wojcicki" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Philip Wojcicki" />
+  <meta property="og:description" content="PhD student at Imperial College London — reconfigurable accelerators, AI acceleration, and compilers." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Apply saved theme before the page paints to avoid a flash. -->
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) { /* localStorage may be blocked — fall back to light */ }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="layout">
+    <!-- ============== LEFT SIDEBAR ============== -->
+    <aside class="sidebar" aria-label="About Philip Wojcicki">
+      <div class="sidebar-inner">
+        <img class="avatar" src="assets/profile_picture.png" alt="Portrait of Philip Wojcicki" />
+
+        <h1 class="name">Philip Wojcicki</h1>
+        <p class="title">PhD Candidate</p>
+        <p class="affiliation">
+          <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener">
+            Imperial College London
+          </a>
+        </p>
+        <ul class="research-areas" aria-label="Research areas">
+          <li>Reconfigurable accelerators</li>
+          <li>AI acceleration</li>
+          <li>Compilers</li>
+        </ul>
+
+        <ul class="contact" aria-label="Contact and profiles">
+          <li>
+            <a href="mailto:filip.wojcicki18@imperial.ac.uk" aria-label="Email">
+              <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              <span>Email</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/filip-wojcicki/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Fiwo735" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://scholar.google.com/citations?user=sPoKASwAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">
+              <i class="fa-brands fa-google-scholar" aria-hidden="true"></i>
+              <span>Google Scholar</span>
+            </a>
+          </li>
+          <!-- <li>
+            <a href="https://orcid.org/0000-0002-3807-9434" target="_blank" rel="noopener" aria-label="ORCID">
+              <i class="fa-brands fa-orcid" aria-hidden="true"></i>
+              <span>ORCID</span>
+            </a>
+          </li> -->
+        </ul>
+
+        <a class="cv-button" href="assets/CV_Philip_Wojcicki.pdf" target="_blank" rel="noopener">
+          <i class="fa-regular fa-file-lines" aria-hidden="true"></i>
+          Download CV
+        </a>
+      </div>
+    </aside>
+
+    <!-- ============== MAIN CONTENT ============== -->
+    <main class="main" id="main">
+      <!-- Sticky section navigation -->
+      <nav class="topnav" aria-label="Section navigation">
+        <ul>
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#industry">Industry</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+        <button class="theme-toggle"
+                type="button"
+                aria-label="Toggle dark mode"
+                aria-pressed="false"
+                title="Toggle dark mode">
+          <i class="fa-solid fa-moon icon-light" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-dark" aria-hidden="true"></i>
+        </button>
+      </nav>
+
+      <div class="content">
+
+        <!-- ============== ABOUT ============== -->
+        <section id="about" class="section">
+          <h2 class="section-title">About</h2>
+          <p>
+            I am a PhD student at
+            <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener">Imperial College London</a>,
+            advised by
+            <a href="https://www.imperial.ac.uk/people/w.luk" target="_blank" rel="noopener">Prof. Wayne Luk</a>
+            and
+            <a href="https://www.imperial.ac.uk/people/p.kelly" target="_blank" rel="noopener">Prof. Paul Kelly</a>.
+            My research focuses on <strong>reconfigurable accelerators</strong> (FPGAs),
+            <strong>AI acceleration</strong>, and <strong>compilers</strong>. I'm particularly interested in
+            co-designing hardware and software — from low-precision number formats and quantisation,
+            to MLIR-based compiler flows for systolic arrays.
+          </p>
+          <p>
+            I have previously worked at
+            <a href="https://www.fractile.ai/" target="_blank" rel="noopener"><strong>Fractile</strong></a>,
+            <a href="https://www.jumptrading.com/" target="_blank" rel="noopener"><strong>Jump Trading</strong></a>, and
+            <a href="https://www.arm.com/" target="_blank" rel="noopener"><strong>Arm</strong></a>,
+            and have presented my work at
+            <a href="https://fccm.org/" target="_blank" rel="noopener">FCCM</a>,
+            <a href="https://www.simonsfoundation.org/flatiron/" target="_blank" rel="noopener">Flatiron Institute</a>,
+            REACH, ScalPerf,
+            <a href="https://www.hipeac.net/acaces/" target="_blank" rel="noopener">ACACES</a>,
+            FDF, NANDA,
+            <a href="https://fpt-conference.org/" target="_blank" rel="noopener">FPT</a>, and
+            <a href="https://home.cern/" target="_blank" rel="noopener">CERN</a> FastML workshops.
+          </p>
+        </section>
+
+        <!-- ============== EDUCATION ============== -->
+        <section id="education" class="section">
+          <h2 class="section-title">Education</h2>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">PhD in Reconfigurable Accelerators</h3>
+                <p class="entry-org">
+                  <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener">Imperial College London</a>
+                </p>
+              </div>
+              <span class="entry-date">2022 – 2027</span>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Advised by
+                <a href="https://www.imperial.ac.uk/people/w.luk" target="_blank" rel="noopener">Prof. Wayne Luk</a>
+                (<a href="https://cc.doc.ic.ac.uk/" target="_blank" rel="noopener">Custom Computing Research Group</a>)
+                and
+                <a href="https://www.imperial.ac.uk/people/p.kelly" target="_blank" rel="noopener">Prof. Paul Kelly</a>
+                (<a href="https://wp.doc.ic.ac.uk/spo/" target="_blank" rel="noopener">Software Performance Optimisation Research Group</a>).
+              </li>
+              <li>Research on FPGAs, AI acceleration, and compilers.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">MEng Computer Engineering</h3>
+                <p class="entry-org">
+                  <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener">Imperial College London</a>
+                  <span class="muted">— equivalent to summa cum laude</span>
+                </p>
+              </div>
+              <span class="entry-date">2018 – 2022</span>
+            </header>
+            <ul class="entry-points">
+              <li>Distinguished Final Year Project (scored 88%).</li>
+              <li>Year 4: Ranked #1 of 65 — 1st Class Honours (84%).</li>
+              <li>Year 3: Ranked #4 of 65 — 1st Class Honours (80%).</li>
+              <li>Year 2: Ranked #1 of 74 — 1st Class Honours (83%).</li>
+              <li>Year 1: Ranked #1 of 74 — 1st Class Honours (80%).</li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- ============== INDUSTRY ============== -->
+        <section id="industry" class="section">
+          <h2 class="section-title">Industrial Experience</h2>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Low-latency Researcher</h3>
+                <p class="entry-org">
+                  <a href="https://www.fractile.ai/" target="_blank" rel="noopener">Fractile</a>
+                </p>
+              </div>
+              <span class="entry-date">Nov 2024 – Jan 2025</span>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Evaluated latency and area trade-offs of block floating-point formats
+                (Microscaling) for an analog in-memory-compute AI-accelerator ASIC.
+              </li>
+              <li>
+                Implemented and benchmarked low-latency paths as RISC-V (RVV) assembly
+                kernels and SystemVerilog blocks to guide HW/SW partitioning.
+              </li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Software &amp; Hardware Engineer</h3>
+                <p class="entry-org">
+                  <a href="https://www.jumptrading.com/" target="_blank" rel="noopener">Jump Trading</a>
+                </p>
+              </div>
+              <span class="entry-date">Mar – Sep 2021</span>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Created a Python library for exploring topology, configuring, connecting,
+                and graphing multi-device (ASIC, FPGA, CPU, GPU) hardware systems.
+              </li>
+              <li>
+                Built an efficient, distributed arbitrage trading C++ application composed
+                of several parallel processes running on ASICs, FPGAs, and x86 machines.
+              </li>
+              <li>
+                Configured and benchmarked formal verification using SystemVerilog and a
+                novel custom Python tool for use in ASIC and FPGA development.
+              </li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Software &amp; Hardware Engineer</h3>
+                <p class="entry-org">
+                  <a href="https://www.jumptrading.com/" target="_blank" rel="noopener">Jump Trading</a>
+                </p>
+              </div>
+              <span class="entry-date">Sep – Oct 2020</span>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Built an ultra low-latency ASIC validation test platform for floating-point
+                calculations on x86 and RISC-V architectures using C++, C, and Python.
+              </li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Systems Architect</h3>
+                <p class="entry-org">
+                  <a href="https://www.arm.com/" target="_blank" rel="noopener">Arm</a>
+                </p>
+              </div>
+              <span class="entry-date">Jun – Sep 2020</span>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Improved an autonomous driving platform's verification in SystemVerilog,
+                overhauled its documentation, and added support for formal verification
+                (JasperGold).
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- ============== RESEARCH PROJECTS ============== -->
+        <section id="projects" class="section">
+          <h2 class="section-title">Research Projects</h2>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">MX Attention on FPGA</h3>
+                <p class="entry-org">
+                  <a href="#" target="_blank" rel="noopener">Paper</a>
+                  <span class="venue">[<a href="https://fccm.org/" target="_blank" rel="noopener">FCCM</a>]</span>
+                  <span class="dot">·</span>
+                  <a href="#" target="_blank" rel="noopener">Code</a>
+                </p>
+              </div>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Built a parametrised <strong>SystemVerilog</strong> FPGA attention architecture with
+                operator-wise <strong>MX-style block floating-point</strong> formats and configurable accumulation.
+              </li>
+              <li>
+                Developed a <strong>Python</strong> design-space exploration framework, finding designs with
+                <strong>29% fewer LUTs</strong>, <strong>7% fewer FFs</strong>, and
+                <strong>0.42 lower perplexity</strong> than baseline.
+              </li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Quantised TNN on FPGA</h3>
+                <p class="entry-org">
+                  <a href="#" target="_blank" rel="noopener">Paper</a>
+                  <span class="venue">[<a href="https://fpt-conference.org/" target="_blank" rel="noopener">FPT</a>]</span>
+                  <span class="dot">·</span>
+                  <a href="#" target="_blank" rel="noopener">Code</a>
+                </p>
+              </div>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Developed a novel <strong>TNN</strong> architecture for GPUs (<strong>PyTorch</strong>) and
+                FPGAs (<strong>HLS</strong>) for High Energy Physics experiments in collaboration with
+                <a href="https://home.cern/" target="_blank" rel="noopener">CERN</a>.
+              </li>
+              <li>
+                FPGA solution outperformed SoTA models on GPU by <strong>~1000×</strong> thanks to
+                software/hardware-aware optimisations, without accuracy loss.
+              </li>
+              <li>
+                Experimented with quantisation-aware training (<strong>QAT</strong>) and developed a quick
+                FPGA-friendly post-training quantisation (<strong>PTQ</strong>) scheme for
+                <strong>HLS4ML</strong>.
+              </li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Qubit Vision TNN on FPGA</h3>
+                <p class="entry-org">
+                  <span class="muted">Paper pending</span>
+                  <span class="venue">[<a href="https://tqe.ieee.org/" target="_blank" rel="noopener">IEEE TQE</a>]</span>
+                </p>
+              </div>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Designed a low-latency <strong>FPGA</strong> pipeline (<strong>CameraLink</strong>) for
+                real-time qubit-state classification in collaboration with experimental quantum physicists.
+              </li>
+              <li>
+                Optimised the <strong>ViT</strong> architecture to achieve millisecond-scale end-to-end
+                detection with up to <strong>~120× lower latency</strong> than a GPU baseline.
+              </li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Zero-shot Learning</h3>
+                <p class="entry-org">
+                  <span class="muted">Paper pending</span>
+                  <span class="venue">[<a href="https://dl.acm.org/journal/tecs" target="_blank" rel="noopener">ACM TECS</a>]</span>
+                </p>
+              </div>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Developed a lightweight zero-shot learning framework with attribute knowledge
+                graphs, reducing parameters by <strong>~100×</strong> while retaining accuracy.
+              </li>
+              <li>
+                Designed an <strong>FPGA</strong> accelerator for <strong>CNN</strong> feature extraction
+                and attribute recognition, achieving <strong>~67× speedup</strong> over a software-only baseline.
+              </li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Systolic Array Compiler</h3>
+                <p class="entry-org">
+                  <span class="muted">Paper pending</span>
+                  <span class="venue">[<a href="https://www.iccd-conf.com/" target="_blank" rel="noopener">ICCD</a>]</span>
+                  <span class="dot">·</span>
+                  <a href="#" target="_blank" rel="noopener">Code</a>
+                </p>
+              </div>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Developed an <strong>MLIR</strong>-based <strong>HLS</strong> framework for
+                <strong>C/C++</strong> and <strong>PyTorch</strong> programs targeting
+                systolic-array accelerators using polyhedral optimisations.
+              </li>
+              <li>
+                Achieved <strong>state-of-the-art performance</strong> while enabling
+                <strong>MLIR</strong> pass interchangeability.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- ============== RESEARCH EXPERIENCE ============== -->
+        <section id="research" class="section">
+          <h2 class="section-title">Research Experience</h2>
+
+          <div class="entry">
+            <h3 class="subsection-title">Talks &amp; Presentations</h3>
+            <p class="entry-points-intro">I have presented my work at:</p>
+            <ul class="tag-list">
+              <li><a href="https://fccm.org/" target="_blank" rel="noopener">FCCM '26</a></li>
+              <li><a href="https://www.simonsfoundation.org/flatiron/" target="_blank" rel="noopener">Flatiron Institute '26</a></li>
+              <li>REACH '25</li>
+              <li>ScalPerf '25</li>
+              <li><a href="https://www.hipeac.net/acaces/" target="_blank" rel="noopener">ACACES '25</a></li>
+              <li>FDF '25</li>
+              <li><a href="https://www.tju.edu.cn/english/index.htm" target="_blank" rel="noopener">School of Microelectronics, Tianjin University</a></li>
+              <li>NANDA '23</li>
+              <li><a href="https://home.cern/" target="_blank" rel="noopener">CERN FastML Workshops</a></li>
+              <li><a href="https://fpt-conference.org/" target="_blank" rel="noopener">FPT '22</a></li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <h3 class="subsection-title">Reviewer</h3>
+            <p class="entry-points-intro">I have served as a reviewer for:</p>
+            <ul class="tag-list">
+              <li><a href="https://www.isfpga.org/" target="_blank" rel="noopener">FPGA</a></li>
+              <li><a href="https://fccm.org/" target="_blank" rel="noopener">FCCM</a></li>
+              <li><a href="https://www.computingfrontiers.org/" target="_blank" rel="noopener">CF</a></li>
+              <li><a href="https://impact-workshop.org/" target="_blank" rel="noopener">IMPACT</a></li>
+              <li><a href="https://pactconf.org/" target="_blank" rel="noopener">PACT</a></li>
+              <li><a href="https://www.euro-par.org/" target="_blank" rel="noopener">Euro-Par</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ============== TEACHING ============== -->
+        <section id="teaching" class="section">
+          <h2 class="section-title">Teaching Experience</h2>
+          <article class="entry">
+            <header class="entry-header">
+              <div>
+                <h3 class="entry-title">Teaching Assistant</h3>
+                <p class="entry-org">
+                  <a href="https://www.imperial.ac.uk/" target="_blank" rel="noopener">Imperial College London</a>
+                  —
+                  <a href="https://www.imperial.ac.uk/computing/" target="_blank" rel="noopener">Department of Computing</a>
+                  &amp;
+                  <a href="https://www.imperial.ac.uk/electrical-engineering/" target="_blank" rel="noopener">Department of Electrical and Electronic Engineering</a>
+                </p>
+              </div>
+              <span class="entry-date">2020 – Present</span>
+            </header>
+            <ul class="entry-points">
+              <li>
+                Develop and maintain labs and coursework on building a
+                <strong>C90-to-RISC-V compiler in C++</strong>.
+              </li>
+              <li>
+                Built automation for testing, benchmarking, reviewing, and environment
+                deployment — with an experience report planned for
+                <strong>SIGCSE TS '27</strong>.
+              </li>
+              <li>
+                Provide support during lab sessions, mark coursework, and offer 1-to-1 tutorials.
+              </li>
+              <li>
+                Awarded the <strong>Top Undergraduate Teaching Assistant</strong> prize.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <!-- ============== SKILLS ============== -->
+        <section id="skills" class="section">
+          <h2 class="section-title">Skills</h2>
+
+          <div class="skills-group">
+            <h3 class="subsection-title">Programming</h3>
+            <ul class="tag-list">
+              <li>Python</li>
+              <li>C++</li>
+              <li>SystemVerilog</li>
+              <li>RISC-V Assembly</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="subsection-title">Tools &amp; Technologies</h3>
+            <ul class="skills-list">
+              <li><strong>ML frameworks:</strong> PyTorch, HLS4ML</li>
+              <li><strong>Quantisation-aware training:</strong> Brevitas, QPyTorch</li>
+              <li><strong>Hardware design &amp; verification:</strong> Vivado, Quartus</li>
+              <li><strong>Compiler infrastructure:</strong> MLIR, LLVM</li>
+              <li><strong>Linux &amp; version control:</strong> Bash, Git</li>
+              <li><strong>Software profiling:</strong> Intel VTune Profiler, perf</li>
+            </ul>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>
+            &copy; <span id="year"></span> Philip Wojcicki ·
+            Built with plain HTML, CSS, and JavaScript using Claude Opus 4.7
+          </p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
